@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::ApiResource('/post', 'PostController');
 
-Route::get('/post', 'PostController@index');
-Route::post('/post', 'PostController@store');
-Route::delete('/post/{post}', 'PostController@destroy');
+// Route::get('/post', 'PostController@index');
+// Route::post('/post', 'PostController@store');
+// Route::delete('/post/{post}', 'PostController@destroy');
+
+ Route::ApiResource('/post', 'PostController');
